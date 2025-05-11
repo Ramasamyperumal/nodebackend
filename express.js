@@ -10,7 +10,7 @@ app.use(express.json());
 const TraineeRoutes = require("./routes/trainee-routes");
 app.use("/v1/api/trainees", TraineeRoutes);
 app.use("/*", (req,res)=>{
-    res.send("Invalid Route!!!");
+    res.send("Invalid Routes!!!");
 });
 
 app.listen(process.env.PORT, () => {
